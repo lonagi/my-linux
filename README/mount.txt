@@ -1,0 +1,6 @@
+/,btrfs,245
+/home,btrfs,>1000
+esp,efi,2
+swap,swap,RAM
+
+#/boot,fat32,2
