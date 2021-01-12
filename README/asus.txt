@@ -1,0 +1,13 @@
+# Wifi Driver
+https://cdimage.debian.org/cdimage/unofficial/non-free/firmware/buster/20210108/  
+firmware-iwlwifi_20190114-2_all  
+intel wireless 8265  
+
+# BIOS  
+Secure Mode Disabled  
+Launch CSM support Enabled  
+SATA configuration AHCI  
+
+# Setup
+Use GPT ISO  
+UEFI Load  
