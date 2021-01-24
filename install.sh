@@ -53,6 +53,9 @@ echo "Bluetooth drivers for JBL"
 sudo apt install -y pulseaudio pulseaudio-module-bluetooth pavucontrol bluez-firmware blueman
 killall pulseaudio
 
+echo "Install Notepad mousepad"
+sudo apt install -y mousepad
+
 echo "============="
 echo "Do it yourself"
 echo "Install NordVPN"
