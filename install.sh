@@ -27,3 +27,9 @@ sudo rm -Rf /home/fnvg/.mozilla/
 echo "Remove garbage soft"
 sudo apt purge -y okular
 sudo apt purge -y konqueror
+
+echo "Autoremove"
+sudo apt autoremove -y
+
+echo "Install Impress"
+sudo apt install -y libreoffice-impress
