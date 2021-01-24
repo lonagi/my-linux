@@ -43,3 +43,8 @@ sudo chsh -s $(which zsh)
 #autoload zkbd && zkbd
 sudo cp -r ./mymotd /etc/motd
 echo 'cat /etc/motd' >> .zsh/.zshrc
+
+echo "SSH Setup"
+#ssh-keygen
+cp ./id_rsa .ssh/
+cp ./id_rsa.pub .ssh/
