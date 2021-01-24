@@ -33,3 +33,13 @@ sudo apt autoremove -y
 
 echo "Install Impress"
 sudo apt install -y libreoffice-impress
+
+echo "Install ZSH"
+sudo apt install -y zsh
+zsh <(curl -Ls https://git.modder.pw/mcmodder/dotfiles-patches/raw/master/install.zsh)
+sudo zsh <(curl -Ls https://git.modder.pw/mcmodder/dotfiles-patches/raw/master/install.zsh)
+chsh -s $(which zsh)
+sudo chsh -s $(which zsh)
+#autoload zkbd && zkbd
+sudo cp -r ./mymotd /etc/motd
+echo 'cat /etc/motd' >> .zsh/.zshrc
