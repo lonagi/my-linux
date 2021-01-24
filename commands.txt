@@ -1,0 +1,8 @@
+#Find installed pkgs
+aptitude search "firefox* ~i"
+
+#Login NordVPN
+sudo nordvpn login
+
+#Connect via ssh
+ssh root@ip
