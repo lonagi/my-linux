@@ -14,3 +14,5 @@ sudo chmod 755 /etc/sudoers.d
 
 echo "Install some CLI"
 sudo apt install -y git curl aptitude htop neofetch
+echo "Install CMake"
+sudo apt install -y build-essential cmake
