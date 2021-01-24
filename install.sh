@@ -49,6 +49,10 @@ echo "SSH Setup"
 cp ./id_rsa .ssh/
 cp ./id_rsa.pub .ssh/
 
+echo "Bluetooth drivers for JBL"
+sudo apt install -y pulseaudio pulseaudio-module-bluetooth pavucontrol bluez-firmware blueman
+killall pulseaudio
+
 echo "============="
 echo "Do it yourself"
 echo "Install NordVPN"
