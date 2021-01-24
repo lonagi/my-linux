@@ -16,3 +16,10 @@ echo "Install some CLI"
 sudo apt install -y git curl aptitude htop neofetch
 echo "Install CMake"
 sudo apt install -y build-essential cmake
+
+echo "Remove Firefox"
+sudo apt-get -y remove firefox-esr
+sudo apt-get autoremove firefox-esr
+sudo apt-get purge firefox-esr
+sudo rm -Rf /home/fnvg/.cache/mozilla/
+sudo rm -Rf /home/fnvg/.mozilla/
