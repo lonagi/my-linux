@@ -23,3 +23,7 @@ sudo apt-get autoremove firefox-esr
 sudo apt-get purge firefox-esr
 sudo rm -Rf /home/fnvg/.cache/mozilla/
 sudo rm -Rf /home/fnvg/.mozilla/
+
+echo "Remove garbage soft"
+sudo apt purge -y okular
+sudo apt purge -y konqueror
