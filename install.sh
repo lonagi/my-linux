@@ -11,3 +11,6 @@ rm -f ./google-chrome*.deb
 echo "SUDO fix problems"
 sudo chown root:root /etc/sudoers.d
 sudo chmod 755 /etc/sudoers.d
+
+echo "Install some CLI"
+sudo apt install -y git curl aptitude htop neofetch
