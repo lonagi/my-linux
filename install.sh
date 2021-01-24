@@ -48,3 +48,9 @@ echo "SSH Setup"
 #ssh-keygen
 cp ./id_rsa .ssh/
 cp ./id_rsa.pub .ssh/
+
+echo "============="
+echo "Do it yourself"
+echo "Install NordVPN"
+sudo apt-get update
+sudo apt-get install -y nordvpn
