@@ -56,6 +56,9 @@ killall pulseaudio
 echo "Install Notepad mousepad"
 sudo apt install -y mousepad
 
+echo "Install GParted"
+sudo apt install -y gparted
+
 echo "============="
 echo "Do it yourself"
 echo "Install NordVPN"
