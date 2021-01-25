@@ -27,6 +27,8 @@ sudo rm -Rf /home/fnvg/.mozilla/
 echo "Remove garbage soft"
 sudo apt purge -y okular
 sudo apt purge -y konqueror
+sudo apt purge -y kaddressbook 
+sudo apt purge -y akregator
 
 echo "Autoremove"
 sudo apt autoremove -y
