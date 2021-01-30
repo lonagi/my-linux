@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Discord
+StartupWMClass=discord
+GenericName=Internet Messenger
+Exec=/snap/bin/discord
+Icon=/snap/discord/120/usr/share/discord/discord.png
+Type=Application
+Categories=Network;InstantMessaging;
+Path=/snap/bin
