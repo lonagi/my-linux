@@ -68,6 +68,11 @@ sudo snap install core
 echo "Install Discord"
 sudo snap install discord
 
+echo "Install Latte Dock"
+git clone https://github.com/psifidotos/Latte-Dock
+./Latte-Dock/install.sh
+dolphin --style whitesur
+rm -f -r ./Latte-Dock
 
 echo "============="
 echo "Do it yourself"
