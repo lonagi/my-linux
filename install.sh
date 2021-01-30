@@ -61,6 +61,14 @@ sudo apt install -y mousepad
 echo "Install GParted"
 sudo apt install -y gparted
 
+echo "Install Snap"
+sudo apt install snapd
+sudo snap install core
+
+echo "Install Discord"
+sudo snap install discord
+
+
 echo "============="
 echo "Do it yourself"
 echo "Install NordVPN"
