@@ -67,6 +67,7 @@ sudo snap install core
 
 echo "Install Discord"
 sudo snap install discord
+snap connect discord:system-observe
 
 echo "Install Latte Dock"
 git clone https://github.com/psifidotos/Latte-Dock
