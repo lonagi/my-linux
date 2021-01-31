@@ -1,0 +1,23 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Categories=Network;InstantMessaging;
+Comment[ru_RU]=
+Comment=
+Exec=~/Telegram/lona/Telegram -workdir ./
+GenericName[ru_RU]=Internet Messenger
+GenericName=Internet Messenger
+Icon=telegram
+MimeType=
+Name[ru_RU]=Telegram Lonagi
+Name=Telegram Lonagi
+Path=~/Telegram/lona
+StartupNotify=true
+StartupWMClass=telegram
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-RunOnDiscreteGpu=false
+X-KDE-SubstituteUID=false
+X-KDE-Username=
