@@ -48,7 +48,7 @@ echo 'cat /etc/motd' >> .zsh/.zshrc
 
 echo "SSH Setup"
 #ssh-keygen
-cp ./id_rsa .ssh/
+#cp ./id_rsa .ssh/
 cp ./id_rsa.pub .ssh/
 
 echo "Bluetooth drivers for JBL"
@@ -68,6 +68,20 @@ sudo snap install core
 echo "Install Discord"
 sudo snap install discord
 snap connect discord:system-observe
+
+echo "Install Telegram"
+wget https://telegram.org/dl/desktop/linux -O tg.tar.xz
+tar -xf tg.tar.xz
+rm -f -r tg.tar.xz
+mv Telegram Telegram0
+mkdir Telegram
+mkdir Telegram/lona
+mkdir Telegram/CNBS
+mkdir Telegram/fsoc
+cp -r Telegram0/* Telegram/lona
+cp -r Telegram0/* Telegram/fsoc
+cp -r Telegram0/* Telegram/CNBS
+rm -f -r Telegram0
 
 echo "Install Latte Dock"
 git clone https://github.com/psifidotos/Latte-Dock
