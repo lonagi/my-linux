@@ -16,6 +16,7 @@ echo "Install some CLI"
 sudo apt install -y git curl aptitude htop neofetch lolcat
 echo "Install CMake"
 sudo apt install -y build-essential cmake
+sudo apt install -y qtwebengine5-dev
 
 echo "Remove Firefox"
 sudo apt-get -y remove firefox-esr
@@ -62,7 +63,7 @@ echo "Install GParted"
 sudo apt install -y gparted
 
 echo "Install Snap"
-sudo apt install snapd
+sudo apt install -y snapd
 sudo snap install core
 
 echo "Install Discord"
