@@ -3,7 +3,7 @@
 Categories=Network;InstantMessaging;
 Comment[ru_RU]=
 Comment=
-Exec=~/Telegram/lona/Telegram -workdir ./
+Exec=~/Telegram/lona/Telegram -workdir ~/Telegram/lona
 GenericName[ru_RU]=Internet Messenger
 GenericName=Internet Messenger
 Icon=telegram
