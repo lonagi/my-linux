@@ -90,6 +90,13 @@ git clone https://github.com/psifidotos/Latte-Dock
 dolphin --style whitesur
 rm -f -r ./Latte-Dock
 
+echo "Add kali repo"
+sudo cp sources.list /etc/apt/sources.list
+git clone https://github.com/LionSec/katoolin.git
+sudo cp katoolin/katoolin.py /usr/bin/katoolin
+sudo chmox +x /usr/bin/katoolin
+rm -f -r ./katoolin
+
 echo "============="
 echo "Do it yourself"
 echo "Install NordVPN"
