@@ -92,6 +92,10 @@ rm -f -r ./Latte-Dock
 
 echo "Add kali repo"
 sudo cp sources.list /etc/apt/sources.list
+sudo apt-get clean
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
 git clone https://github.com/LionSec/katoolin.git
 sudo cp katoolin/katoolin.py /usr/bin/katoolin
 sudo chmox +x /usr/bin/katoolin
