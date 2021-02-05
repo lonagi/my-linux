@@ -107,6 +107,9 @@ pip3 install weboa
 sudo pip3 install weboa
 weboa -v
 
+echo "Install FFMpeg"
+sudo apt install -y ffmpeg
+sudo apt install -y winff
 
 echo "============="
 echo "Do it yourself"
