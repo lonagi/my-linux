@@ -126,6 +126,9 @@ sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/shiftkey/desktop/any/
 sudo apt-get -y update
 sudo apt install -y github-desktop
 
+echo "Install Zoom"
+sudo snap install zoom-client
+
 
 echo "============="
 echo "Do it yourself"
