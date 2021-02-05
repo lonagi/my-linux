@@ -101,6 +101,13 @@ sudo cp katoolin/katoolin.py /usr/bin/katoolin
 sudo chmox +x /usr/bin/katoolin
 rm -f -r ./katoolin
 
+echo "Install Weboa"
+sudo apt install -y python3-pip
+pip3 install weboa
+sudo pip3 install weboa
+weboa -v
+
+
 echo "============="
 echo "Do it yourself"
 echo "Install NordVPN"
