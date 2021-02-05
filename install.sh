@@ -111,6 +111,9 @@ echo "Install FFMpeg"
 sudo apt install -y ffmpeg
 sudo apt install -y winff
 
+echo "Install Blender"
+sudo apt install -y blender
+
 echo "============="
 echo "Do it yourself"
 echo "Install NordVPN"
