@@ -153,6 +153,7 @@ sudo apt-get install -y dotnet-runtime-5.0
 wget https://download.jetbrains.com/rider/JetBrains.Rider-2020.3.2.tar.gz
 mv JetBrains.Rider-2020.3.2.tar.gz Jetbrains.Rider.tar.gz
 tar -xf Jetbrains.Rider.tar.gz
+rm -f -r Jetbrains.Rider.tar.gz
 mv JetBrains\ Rider-2020.3.2 JetBrains.Rider
 mv JetBrains.Rider /opt/
 
