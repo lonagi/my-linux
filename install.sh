@@ -160,10 +160,15 @@ mv JetBrains.Rider /opt/
 echo "Unity3D"
 
 echo "Install PHP"
-sudo apt install -y php php-dev php-cli php-curl php-imagick php-common
+sudo apt install -y php php-dev php-cli php-curl php-imagick php-common php-zip unzip
 sudo apt purge -y apache2
 
 echo "Install Composer"
+wget -O composer-setup.php https://getcomposer.org/installer
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+sudo composer self-update  
+rm -f -r composer-setup.php
+
 
 echo "Install nginx"
 echo "Install MySQL & phpmyadmin"
