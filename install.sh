@@ -129,6 +129,32 @@ sudo apt install -y github-desktop
 echo "Install Zoom"
 sudo snap install zoom-client
 
+echo "Install C# and Jetbrains.Rider"
+#Mono
+sudo apt install -y apt-transport-https dirmngr gnupg ca-certificates
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+echo "deb https://download.mono-project.com/repo/debian stable-buster main" | sudo tee /etc/apt/sources.list.d/mono-official-stable.list
+sudo apt update
+sudo apt install -y mono-devel
+#.NET Core
+wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+rm -f -r packages-microsoft-prod.deb
+sudo apt-get update
+sudo apt-get install -y apt-transport-https
+sudo apt-get update
+sudo apt-get install -y dotnet-sdk-5.0
+sudo apt-get update
+sudo apt-get install -y apt-transport-https
+sudo apt-get update
+sudo apt-get install -y aspnetcore-runtime-5.0
+sudo apt-get install -y dotnet-runtime-5.0
+#Rider
+wget https://download.jetbrains.com/rider/JetBrains.Rider-2020.3.2.tar.gz
+mv JetBrains.Rider-2020.3.2.tar.gz Jetbrains.Rider.tar.gz
+tar -xf Jetbrains.Rider.tar.gz
+mv JetBrains\ Rider-2020.3.2 JetBrains.Rider
+mv JetBrains.Rider /opt/
 
 echo "============="
 echo "Do it yourself"
