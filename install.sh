@@ -158,6 +158,9 @@ mv JetBrains\ Rider-2020.3.2 JetBrains.Rider
 mv JetBrains.Rider /opt/
 
 echo "Unity3D"
+wget https://public-cdn.cloud.unity3d.com/hub/prod/UnityHub.AppImage
+mv UnityHub.AppImage ~/apps/UnityHub
+chmod +x ~/apps/UnityHub
 
 echo "Install PHP"
 sudo apt install -y php php-dev php-cli php-curl php-imagick php-common php-zip unzip
