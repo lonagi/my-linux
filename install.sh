@@ -157,6 +157,17 @@ rm -f -r Jetbrains.Rider.tar.gz
 mv JetBrains\ Rider-2020.3.2 JetBrains.Rider
 mv JetBrains.Rider /opt/
 
+echo "Unity3D"
+
+echo "Install PHP"
+sudo apt install -y php php-dev php-cli php-curl php-imagick php-common
+sudo apt purge -y apache2
+
+echo "Install Composer"
+
+echo "Install nginx"
+echo "Install MySQL & phpmyadmin"
+
 echo "============="
 echo "Do it yourself"
 echo "Install NordVPN"
