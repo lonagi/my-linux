@@ -184,6 +184,14 @@ sudo apt install -y php php-dev php-cli php-curl php-imagick php-common php-zip 
 sudo apt install -y php-mysql php-gd
 sudo apt purge -y apache2
 
+echo "Install Jetbrains PHPStorm"
+wget https://download.jetbrains.com/webide/PhpStorm-2020.3.2.tar.gz
+mv PhpStorm-2020.3.2.tar.gz Jetbrains.PHPStorm.tar.gz
+tar -xf Jetbrains.PHPStorm.tar.gz
+rm -f -r Jetbrains.PHPStorm.tar.gz
+mv PhpStorm-203.7148.74 JetBrains.PHPStorm
+sudo mv JetBrains.PHPStorm /opt/
+
 echo "Install Composer"
 wget -O composer-setup.php https://getcomposer.org/installer
 sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
