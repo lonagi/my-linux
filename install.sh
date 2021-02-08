@@ -230,6 +230,14 @@ rm -f -r Jetbrains.CLion.tar.gz
 mv clion-2020.3.2 JetBrains.CLion
 sudo mv JetBrains.CLion /opt/
 
+echo "Install Jetbrains IDEA"
+wget https://download.jetbrains.com/idea/ideaIC-2020.3.2.tar.gz
+mv ideaIC-2020.3.2.tar.gz Jetbrains.IDEA.tar.gz
+tar -xf Jetbrains.IDEA.tar.gz
+rm -f -r Jetbrains.IDEA.tar.gz
+mv idea-IC-203.7148.57 JetBrains.IDEA
+sudo mv JetBrains.IDEA /opt/
+
 
 echo "============="
 echo "Do it yourself"
