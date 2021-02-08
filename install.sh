@@ -175,6 +175,8 @@ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 sudo composer self-update  
 rm -f -r composer-setup.php
 
+echo "Install UWSGI"
+pip3 install uwsgi
 
 echo "Install nginx"
 echo "Install MySQL & phpmyadmin"
