@@ -167,6 +167,7 @@ chmod +x ~/apps/UnityHub
 
 echo "Install PHP"
 sudo apt install -y php php-dev php-cli php-curl php-imagick php-common php-zip unzip
+sudo apt install -y php-mysql php-gd
 sudo apt purge -y apache2
 
 echo "Install Composer"
@@ -177,13 +178,17 @@ rm -f -r composer-setup.php
 
 echo "Install UWSGI"
 pip3 install uwsgi
+sudo apt install uwsgi uwsgi-plugin-php
+#uwsgi --plugins php --master --socket :3030 --processes 4
 
 echo "Install nginx"
 sudo apt install -y nginx
 sudo apt install -y ufw
 sudo ufw app list
 sudo ufw allow 'Nginx HTTP'
-
+PATH=$PATH:~/usr/sbin
+PATH=$PATH:/usr/sbin
+sudo mv ./default.nginx /etc/nginx/sites-available/default
 
 
 echo "Install MySQL & phpmyadmin"
