@@ -108,7 +108,9 @@ sudo pip3 install weboa
 weboa -v
 
 echo "Some pip install"
-pip3 install pyinstaller numpy pandas
+pip3 install pyinstaller numpy pandas pywebview
+pip3 install PyQtWebEngine
+#ldd /usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqxcb.so
 
 echo "Install OpenCV"
 sudo apt install -y python3-opencv
