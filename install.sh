@@ -59,9 +59,6 @@ killall pulseaudio
 echo "Install Notepad mousepad"
 sudo apt install -y mousepad
 
-echo "Install GParted"
-sudo apt install -y gparted
-
 echo "Install Snap"
 sudo apt install -y snapd
 sudo snap install core
@@ -172,6 +169,12 @@ sudo apt install -y blender
 
 echo "Install Zoom"
 sudo snap install zoom-client
+
+echo "Install GParted"
+sudo apt install -y gparted
+
+echo "Install OBS"
+sudo apt install -y obs-studio
 
 echo "Install Tor"
 wget https://www.torproject.org/dist/torbrowser/10.0.10/tor-browser-linux64-10.0.10_en-US.tar.xz
