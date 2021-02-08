@@ -1,0 +1,22 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Categories=Development
+Comment[ru_RU]=
+Comment=
+Exec=/opt/JetBrains.IDEA/bin/idea.sh
+GenericName[ru_RU]=Java
+GenericName=Java
+Icon=/opt/JetBrains.IDEA/bin/idea.png
+MimeType=
+Name[ru_RU]=Jetbrains IDEA
+Name=Jetbrains IDEA
+Path=/opt/JetBrains.IDEA/bin
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-RunOnDiscreteGpu=false
+X-KDE-SubstituteUID=false
+X-KDE-Username=
