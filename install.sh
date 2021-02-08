@@ -107,15 +107,15 @@ pip3 install weboa
 sudo pip3 install weboa
 weboa -v
 
+echo "Some pip install"
+pip3 install pyinstaller numpy pandas
+
 echo "Install OpenCV"
 sudo apt install -y python3-opencv
 
 echo "Install FFMpeg"
 sudo apt install -y ffmpeg
 sudo apt install -y winff
-
-echo "Install Blender"
-sudo apt install -y blender
 
 echo "Install Sublime text"
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
@@ -128,9 +128,6 @@ sudo wget -qO - https://packagecloud.io/shiftkey/desktop/gpgkey | sudo apt-key a
 sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/shiftkey/desktop/any/ any main" > /etc/apt/sources.list.d/packagecloud-shiftky-desktop.list'
 sudo apt-get -y update
 sudo apt install -y github-desktop
-
-echo "Install Zoom"
-sudo snap install zoom-client
 
 echo "Install C# and Jetbrains.Rider"
 #Mono
@@ -164,6 +161,18 @@ echo "Unity3D"
 wget https://public-cdn.cloud.unity3d.com/hub/prod/UnityHub.AppImage
 mv UnityHub.AppImage ~/apps/UnityHub
 chmod +x ~/apps/UnityHub
+
+echo "Install Blender"
+sudo apt install -y blender
+
+echo "Install Zoom"
+sudo snap install zoom-client
+
+echo "Install Tor"
+wget https://www.torproject.org/dist/torbrowser/10.0.10/tor-browser-linux64-10.0.10_en-US.tar.xz
+tar -xf tor-browser-linux64-10.0.10_en-US.tar.xz 
+sudo mv tor-browser_en-US /opt/Tor
+rm -f -r tor-browser-linux64-10.0.10_en-US.tar.xz 
 
 echo "Install PHP"
 sudo apt install -y php php-dev php-cli php-curl php-imagick php-common php-zip unzip
