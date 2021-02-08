@@ -1,0 +1,22 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Categories=Development
+Comment[ru_RU]=
+Comment=
+Exec=/opt/JetBrains.CLion/bin/clion.sh
+GenericName[ru_RU]=C++
+GenericName=C++
+Icon=/opt/JetBrains.CLion/bin/clion.png
+MimeType=
+Name[ru_RU]=Jetbrains CLion
+Name=Jetbrains CLion
+Path=/opt/JetBrains.CLion/bin
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+X-DBUS-ServiceName=
+X-DBUS-StartupType=
+X-KDE-RunOnDiscreteGpu=false
+X-KDE-SubstituteUID=false
+X-KDE-Username=
