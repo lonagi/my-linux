@@ -1,5 +1,4 @@
-echo "Remove libreoffice garbage"
-sudo apt-get remove -y libreoffice-draw libreoffice-math libreoffice-base
+./modules/deleter.sh
 
 echo "Setup Google Chrome"
 sudo apt install libxss1 libappindicator1 libindicator7
@@ -17,22 +16,6 @@ sudo apt install -y git curl aptitude htop neofetch lolcat
 echo "Install CMake"
 sudo apt install -y build-essential cmake
 sudo apt install -y qtwebengine5-dev
-
-echo "Remove Firefox"
-sudo apt-get -y remove firefox-esr
-sudo apt-get autoremove firefox-esr
-sudo apt-get purge firefox-esr
-sudo rm -Rf /home/fnvg/.cache/mozilla/
-sudo rm -Rf /home/fnvg/.mozilla/
-
-echo "Remove garbage soft"
-sudo apt purge -y okular
-sudo apt purge -y konqueror
-sudo apt purge -y kaddressbook 
-sudo apt purge -y akregator
-
-echo "Autoremove"
-sudo apt autoremove -y
 
 echo "Install Impress"
 sudo apt install -y libreoffice-impress
