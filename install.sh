@@ -211,6 +211,9 @@ echo "Install NodeJs,Npm,js"
 sudo apt install -y nodejs npm
 sudo apt-get install -y npm
 
+echo "Install SVGO"
+sudo npm install -g svgo
+
 echo "Install Jetbrains Webstorm"
 wget https://download.jetbrains.com/webstorm/WebStorm-2020.3.2.tar.gz
 mv WebStorm-2020.3.2.tar.gz Jetbrains.Webstorm.tar.gz
