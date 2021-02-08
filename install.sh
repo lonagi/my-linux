@@ -204,6 +204,12 @@ sudo mv ./default.nginx /etc/nginx/sites-available/default
 
 echo "Install MySQL & phpmyadmin"
 
+echo "Install NodeJs,Npm,js"
+sudo apt install -y nodejs npm
+sudo apt-get install -y npm
+
+
+
 echo "============="
 echo "Do it yourself"
 echo "Install NordVPN"
