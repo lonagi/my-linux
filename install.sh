@@ -108,7 +108,7 @@ sudo pip3 install weboa
 weboa -v
 
 echo "Install OpenCV"
-sudo apt install python3-opencv
+sudo apt install -y python3-opencv
 
 echo "Install FFMpeg"
 sudo apt install -y ffmpeg
@@ -179,6 +179,13 @@ echo "Install UWSGI"
 pip3 install uwsgi
 
 echo "Install nginx"
+sudo apt install -y nginx
+sudo apt install -y ufw
+sudo ufw app list
+sudo ufw allow 'Nginx HTTP'
+
+
+
 echo "Install MySQL & phpmyadmin"
 
 echo "============="
