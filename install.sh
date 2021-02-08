@@ -69,6 +69,7 @@ sudo snap install core
 echo "Install Discord"
 sudo snap install discord
 snap connect discord:system-observe
+mv discord.desktop ~/apps/
 
 echo "Install Telegram"
 wget https://telegram.org/dl/desktop/linux -O tg.tar.xz
@@ -83,6 +84,7 @@ cp -r Telegram0/* Telegram/lona
 cp -r Telegram0/* Telegram/fsoc
 cp -r Telegram0/* Telegram/CNBS
 rm -f -r Telegram0
+mv telegram.desktop ~/apps/
 
 echo "Install Latte Dock"
 git clone https://github.com/psifidotos/Latte-Dock
@@ -157,7 +159,8 @@ mv JetBrains.Rider-2020.3.2.tar.gz Jetbrains.Rider.tar.gz
 tar -xf Jetbrains.Rider.tar.gz
 rm -f -r Jetbrains.Rider.tar.gz
 mv JetBrains\ Rider-2020.3.2 JetBrains.Rider
-mv JetBrains.Rider /opt/
+sudo  mv JetBrains.Rider /opt/
+mv rider.desktop ~/apps/
 
 echo "Unity3D"
 wget https://public-cdn.cloud.unity3d.com/hub/prod/UnityHub.AppImage
@@ -208,6 +211,14 @@ echo "Install NodeJs,Npm,js"
 sudo apt install -y nodejs npm
 sudo apt-get install -y npm
 
+echo "Install Jetbrains Webstorm"
+wget https://download.jetbrains.com/webstorm/WebStorm-2020.3.2.tar.gz
+mv WebStorm-2020.3.2.tar.gz Jetbrains.Webstorm.tar.gz
+tar -xf Jetbrains.Webstorm.tar.gz
+rm -f -r Jetbrains.Webstorm.tar.gz
+mv WebStorm-203.7148.54 JetBrains.Webstorm
+sudo mv JetBrains.Webstorm /opt/
+mv webstorm.desktop ~/apps/
 
 
 echo "============="
