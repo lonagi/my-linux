@@ -7,22 +7,16 @@ sudo apt install -y zsh
 sudo ./modules/zsh.sh
 ./modules/zsh.sh
 
-
-
-
 echo "Install Telegram"
 wget https://telegram.org/dl/desktop/linux -O tg.tar.xz
 tar -xf tg.tar.xz
-rm -f -r tg.tar.xz
+rm -rf tg.tar.xz
 mv Telegram Telegram0
-mkdir Telegram
-mkdir Telegram/lona
-mkdir Telegram/CNBS
-mkdir Telegram/fsoc
-cp -r Telegram0/* Telegram/lona
-cp -r Telegram0/* Telegram/fsoc
-cp -r Telegram0/* Telegram/CNBS
-rm -f -r Telegram0
+mkdir Telegram Telegram/1 Telegram/2 Telegram/3
+cp -r Telegram0/* Telegram/1
+cp -r Telegram0/* Telegram/2
+cp -r Telegram0/* Telegram/3
+rm -rf Telegram0
 
 
 
@@ -47,20 +41,6 @@ echo "Some pip install"
 pip3 install pyinstaller numpy pandas pywebview
 pip3 install PyQtWebEngine
 #ldd /usr/lib/x86_64-linux-gnu/qt5/plugins/platforms/libqxcb.so
-
-
-
-echo "Install Sublime text"
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt update
-sudo apt install -y sublime-text
-
-echo "Install Github Desktop"
-sudo wget -qO - https://packagecloud.io/shiftkey/desktop/gpgkey | sudo apt-key add -
-sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/shiftkey/desktop/any/ any main" > /etc/apt/sources.list.d/packagecloud-shiftky-desktop.list'
-sudo apt-get -y update
-sudo apt install -y github-desktop
 
 echo "Install C# and Jetbrains.Rider"
 #Mono
