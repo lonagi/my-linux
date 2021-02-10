@@ -144,6 +144,8 @@ rm -f -r Jetbrains.IDEA.tar.gz
 mv idea-IC-203.7148.57 JetBrains.IDEA
 sudo mv JetBrains.IDEA /opt/
 
+echo "Install Python, Jupyter"
+pip3 install jupyter
 
 echo "============="
 echo "Do it yourself"
