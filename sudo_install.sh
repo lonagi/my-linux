@@ -99,8 +99,7 @@ sudo mv tor-browser_en-US /opt/Tor
 rm -f -r tor-browser-linux64-10.0.10_en-US.tar.xz 
 
 echo "Install PHP"
-sudo apt install -y php php-dev php-cli php-curl php-imagick php-common php-zip unzip
-sudo apt install -y php-mysql php-gd
+sudo apt install -y php php-dev php-cli php-curl php-mysql php-gd php-imagick php-zip unzip
 sudo apt purge -y apache2
 
 echo "Install Jetbrains PHPStorm"
