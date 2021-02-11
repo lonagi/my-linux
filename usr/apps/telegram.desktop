@@ -3,14 +3,14 @@
 Categories=Network;InstantMessaging;
 Comment[ru_RU]=
 Comment=
-Exec=~/Telegram/lona/Telegram -workdir ~/Telegram/lona
+Exec=~/Telegram/1/Telegram -workdir ~/Telegram/1
 GenericName[ru_RU]=Internet Messenger
 GenericName=Internet Messenger
 Icon=telegram
 MimeType=
 Name[ru_RU]=Telegram Lonagi
 Name=Telegram Lonagi
-Path=~/Telegram/lona
+Path=~/Telegram/1
 StartupNotify=true
 StartupWMClass=telegram
 Terminal=false

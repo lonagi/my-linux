@@ -1,4 +1,3 @@
-echo "Sudo settings"
 apt-get install sudo -y
 export PATH="$PATH:/sbin:/usr/sbin:/usr/local/sbin"
 
