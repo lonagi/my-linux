@@ -9,74 +9,6 @@ sudo ./modules/installs.sh
 #sudo ./modules/settings.sh
 
 
-echo "Add kali repo"
-sudo cp sources.list /etc/apt/sources.list
-sudo apt-get clean
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get dist-upgrade
-git clone https://github.com/LionSec/katoolin.git
-sudo cp katoolin/katoolin.py /usr/bin/katoolin
-sudo chmox +x /usr/bin/katoolin
-rm -f -r ./katoolin
-
-
-
-echo "Install Tor"
-wget https://www.torproject.org/dist/torbrowser/10.0.10/tor-browser-linux64-10.0.10_en-US.tar.xz
-tar -xf tor-browser-linux64-10.0.10_en-US.tar.xz 
-sudo mv tor-browser_en-US /opt/Tor
-rm -f -r tor-browser-linux64-10.0.10_en-US.tar.xz 
-
-
-echo "Install Composer"
-wget -O composer-setup.php https://getcomposer.org/installer
-sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
-sudo composer self-update  
-rm -f -r composer-setup.php
-
-
-#Rider
-wget https://download.jetbrains.com/rider/JetBrains.Rider-2020.3.2.tar.gz
-mv JetBrains.Rider-2020.3.2.tar.gz Jetbrains.Rider.tar.gz
-tar -xf Jetbrains.Rider.tar.gz
-rm -f -r Jetbrains.Rider.tar.gz
-mv JetBrains\ Rider-2020.3.2 JetBrains.Rider
-sudo  mv JetBrains.Rider /opt/
-
-
-echo "Install Jetbrains PHPStorm"
-wget https://download.jetbrains.com/webide/PhpStorm-2020.3.2.tar.gz
-mv PhpStorm-2020.3.2.tar.gz Jetbrains.PHPStorm.tar.gz
-tar -xf Jetbrains.PHPStorm.tar.gz
-rm -f -r Jetbrains.PHPStorm.tar.gz
-mv PhpStorm-203.7148.74 JetBrains.PHPStorm
-sudo mv JetBrains.PHPStorm /opt/
-
-echo "Install Jetbrains Webstorm"
-wget https://download.jetbrains.com/webstorm/WebStorm-2020.3.2.tar.gz
-mv WebStorm-2020.3.2.tar.gz Jetbrains.Webstorm.tar.gz
-tar -xf Jetbrains.Webstorm.tar.gz
-rm -f -r Jetbrains.Webstorm.tar.gz
-mv WebStorm-203.7148.54 JetBrains.Webstorm
-sudo mv JetBrains.Webstorm /opt/
-
-echo "Install Jetbrains CLion"
-wget https://download.jetbrains.com/cpp/CLion-2020.3.2.tar.gz
-mv CLion-2020.3.2.tar.gz Jetbrains.CLion.tar.gz
-tar -xf Jetbrains.CLion.tar.gz
-rm -f -r Jetbrains.CLion.tar.gz
-mv clion-2020.3.2 JetBrains.CLion
-sudo mv JetBrains.CLion /opt/
-
-echo "Install Jetbrains IDEA"
-wget https://download.jetbrains.com/idea/ideaIC-2020.3.2.tar.gz
-mv ideaIC-2020.3.2.tar.gz Jetbrains.IDEA.tar.gz
-tar -xf Jetbrains.IDEA.tar.gz
-rm -f -r Jetbrains.IDEA.tar.gz
-mv idea-IC-203.7148.57 JetBrains.IDEA
-sudo mv JetBrains.IDEA /opt/
-
 
 echo "Install UWSGI"
 #pip3 install uwsgi
@@ -120,5 +52,3 @@ sudo apt-get install -y nordvpn
 
 echo "SSH Setup"
 #ssh-keygen
-#cp ./id_rsa .ssh/
-cp ./id_rsa.pub .ssh/

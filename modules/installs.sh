@@ -1,8 +1,15 @@
 echo "Install some CLI, CMake, Impress, mousepad, Discord, Snap, PHP, NodeJs"
-apt install -y git curl aptitude htop neofetch lolcat build-essential cmake qtwebengine5-dev libreoffice-impress mousepad snapd python3-pip python3-opencv ffmpeg winff blender gparted obs-studio php php-dev php-cli php-curl php-mysql php-gd php-imagick php-zip unzip nodejs npm
+apt install -y git curl aptitude htop neofetch lolcat build-essential cmake qtwebengine5-dev libreoffice-impress mousepad snapd python3-pip python3-opencv ffmpeg winff blender gparted obs-studio php php-dev php-cli php-curl php-mysql php-gd php-imagick php-zip unzip
 apt purge -y apache2
 snap install core zoom-client
 pip3 install weboa
+
+# Using Debian, as root
+curl -fsSL https://deb.nodesource.com/setup_15.x | bash -
+apt install -y nodejs
+
+curl https://www.npmjs.com/install.sh | sh
+
 
 echo "Install SVGO"
 npm install -g svgo
@@ -16,11 +23,19 @@ PATH=$PATH:~/usr/sbin
 PATH=$PATH:/usr/sbin
 mv ./etc/default.nginx /etc/nginx/sites-available/default
 
-echo "Install Discord"
-wget -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
-dpkg -i ./discord.deb
-#snap install discord
-#snap connect discord:system-observe
+#??
+echo "Install Tor"
+wget https://www.torproject.org/dist/torbrowser/10.0.10/tor-browser-linux64-10.0.10_en-US.tar.xz
+tar -xf tor-browser-linux64-10.0.10_en-US.tar.xz 
+sudo mv tor-browser_en-US /opt/Tor
+rm -f -r tor-browser-linux64-10.0.10_en-US.tar.xz 
+#?
+echo "Install Composer"
+wget -O composer-setup.php https://getcomposer.org/installer
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+sudo composer self-update  
+rm -f -r composer-setup.php
+#??
 
 echo "Bluetooth drivers for JBL"
 # apt install -y pulseaudio pulseaudio-module-bluetooth pavucontrol bluez-firmware blueman
@@ -53,7 +68,7 @@ sh -c 'echo "deb [arch=amd64] https://packagecloud.io/shiftkey/desktop/any/ any 
 apt -y update
 apt install -y sublime-text github-desktop
 
-echo "Install C# and Jetbrains.Rider"
+echo "Install C#"
 #Mono
 apt install -y apt-transport-https dirmngr gnupg ca-certificates
 apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
@@ -73,3 +88,19 @@ echo "Unity3D"
 wget https://public-cdn.cloud.unity3d.com/hub/prod/UnityHub.AppImage
 mv UnityHub.AppImage ~/apps/UnityHub
 chmod +x ~/apps/UnityHub
+
+echo "Jetbrains Toolbox, TeamViewer, Discord, Postman"
+wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.20.7940.tar.gz
+wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+wget https://dl.pstmn.io/download/latest/linux64 -O postman-linux-x64.tar.gz
+wget -O discord.deb "https://discordapp.com/api/download?platform=linux&format=deb"
+tar -xzf postman-linux-x64.tar.gz -C /opt
+tar -xf jetbrains-toolbox-1.20.7940.tar.gz
+dpkg -i ./discord.deb
+ln -s /opt/Postman/Postman /usr/bin/postman
+cp usr/apps/Postman.desktop ~/.local/share/applications/
+rm -rf jetbrains-toolbox-1.20.7940.tar.gz teamviewer_amd64.deb ./discord postman-linux-x64.tar.gz
+mv -r jetbrains-toolbox-1.20.7940 /opt/Jetbrains
+apt install -y ./teamviewer_amd64.deb
+#snap install discord
+#snap connect discord:system-observe
