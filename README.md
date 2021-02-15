@@ -6,7 +6,7 @@ My Linux settings and configs
 ### Getting Started
 
 1. Follow **sudo_setup** manually  
-2. Run **install.sh**
+2. Run **install.sh** as user
 
 ### Project Structure
 
