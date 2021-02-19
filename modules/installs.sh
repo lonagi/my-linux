@@ -4,6 +4,12 @@ apt purge -y apache2
 snap install core zoom-client
 pip3 install weboa
 
+#Katoolin
+git clone https://github.com/LionSec/katoolin.git
+chmod +x katoolin/katoolin.py
+cp katoolin/katoolin.py /usr/bin/katoolin
+katoolin
+
 # Using Debian, as root
 curl -fsSL https://deb.nodesource.com/setup_15.x | bash -
 apt install -y nodejs
