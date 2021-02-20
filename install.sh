@@ -2,8 +2,8 @@ sudo ./modules/deleter.sh
 
 echo "Install ZSH"
 sudo apt install -y zsh
-sudo ./modules/zsh.sh
-./modules/zsh.sh
+zsh <(curl -Ls https://git.modder.pw/mcmodder/dotfiles-patches/raw/master/install.zsh)
+sudo -iu zsh <(curl -Ls https://git.modder.pw/mcmodder/dotfiles-patches/raw/master/install.zsh)
 
 sudo ./modules/installs.sh
 #sudo ./modules/settings.sh
