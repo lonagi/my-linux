@@ -4,6 +4,7 @@ echo "Install ZSH"
 sudo apt install -y zsh
 zsh <(curl -Ls https://git.modder.pw/mcmodder/dotfiles-patches/raw/master/install.zsh)
 sudo -iu zsh <(curl -Ls https://git.modder.pw/mcmodder/dotfiles-patches/raw/master/install.zsh)
+chsh -s $(which zsh)
 
 sudo ./modules/installs.sh
 #sudo ./modules/settings.sh
